@@ -28,14 +28,14 @@ a {
 }
 
 .user-info .user-image {
-  height: 2em;
-  width: 2em;
+  margin-top: 3px;
   border-radius: 50%;
-  background-color: white;
-  opacity: 0.4;
-  margin-left: 0.7em;
+  margin-left: .7em;
 }
-
+.user-info img{
+  border-radius: 50%;
+  width: 40px;
+}
 #closeApp {
   margin-left: 15px;
   font-size: 0.7em;
@@ -45,7 +45,9 @@ a {
   padding: 5px 10px;
   cursor: pointer;
 }
-
+.user-info .user-image:hover{
+  cursor: pointer;
+}
 /* Nova tarefa ----------------------------------------------------------- */
 
 .nova-tarefa {
@@ -280,3 +282,30 @@ a {
 }
 
 
+
+.active{
+  margin-top: -450px;
+  margin-right: -100px;
+  transition: 0.3%;
+}
+.avatar-container{
+  display: flex;
+  position: absolute;
+  z-index: 21;
+  flex-wrap: wrap;
+  width: 300px;
+  right: 20px;
+}
+.avatar-container img{
+  width: 80px;
+}
+
+.avatar img{
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.avatar {
+  margin: 5px;
+  border-radius:50%;
+}

@@ -1,8 +1,66 @@
 @import url('./common.css');
 
 body{
-  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(228, 228, 228);
 }
+main {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+}
+
+header{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.cabeca {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.cabeca > img {
+  width: 150px;
+}
+.rodape-container {
+  background: #ffffff;
+  bottom: 0 auto;
+  width: 100%;
+}
+
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+
+}
+.card-aluno{
+  margin-top: 20px;
+}
+.rodape img{
+  width: 30px;
+}
+#direitos-autorais{
+    
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  color: rgb(116, 116, 116);
+  font-weight: 300;
+  margin: .5em 0;
+}
+
 
 h1 {
   color: rgb(116, 116, 116);
