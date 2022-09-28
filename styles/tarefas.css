@@ -262,6 +262,43 @@ a {
 #skeleton {
   animation: trasparencia 1s infinite;
 }
+
+
+.rodape-container {
+  background: #ffffff;
+  bottom: 0 auto;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+
+}
+.card-aluno{
+  margin-top: 20px;
+}
+.rodape img{
+  width: 30px;
+}
+#direitos-autorais{
+    
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.logo-contato{
+  display: flex;
+  
+}
+.logo-contato a {
+  padding-left: 1px;
+}
+
+
 @keyframes trasparencia {
   0% {
     opacity: 0.5;
