@@ -18,7 +18,7 @@ Michel Vieira
   
  Rafael Varela
   Principais atividades realizadas:
-    comunicão com a API;
+    Validações:
     criação do header;
     Endpoint do cadastro;
     Model;
