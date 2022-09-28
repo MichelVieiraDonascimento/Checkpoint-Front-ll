@@ -16,6 +16,7 @@ a {
   color: white;
 }
 
+
 .user-info {
   display: flex;
   align-items: center;
@@ -283,18 +284,16 @@ a {
 
 
 
-.active{
-  margin-top: -450px;
-  margin-right: -100px;
-  transition: 0.3%;
-}
+
 .avatar-container{
   display: flex;
-  position: absolute;
+  position: fixed;
   z-index: 21;
   flex-wrap: wrap;
   width: 300px;
-  right: 20px;
+  right: -800px;
+ 
+
 }
 .avatar-container img{
   width: 80px;
@@ -308,4 +307,12 @@ a {
 .avatar {
   margin: 5px;
   border-radius:50%;
+}
+
+
+.active{
+  top: 50px;
+  margin-top: 0px;
+  margin-right: 800px;
+  transition: 0.3%;
 }
