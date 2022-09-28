@@ -1,4 +1,3 @@
-let avatar = document.getElementsByClassName("imgs")
 
 function insert(n){
     console.log (n)
@@ -33,3 +32,5 @@ bar.addEventListener("click", () => {
 // }  )
 
 console.log(escolha);
+
+

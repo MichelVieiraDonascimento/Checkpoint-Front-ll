@@ -17,3 +17,4 @@ class SaveStorageCadastro {
 }
 
 export default SaveStorageCadastro;
+
