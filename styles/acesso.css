@@ -149,3 +149,38 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+
+
+@media ( max-width: 600px )  { 
+  .left{
+    display: none;
+  }
+  .right{
+    width: 500vh;
+  }
+  .cabeca img{
+    width: 80px;
+  }
+  h1{
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  .rodape {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cabeca{
+    display: flex;
+
+  }
+  .card-aluno{
+    margin: 20px;
+  }
+  #direitos-autorais{
+    
+  display: flex;
+  align-items: center;
+    margin: 10px 8px 10px 19%;
+  }
+}
