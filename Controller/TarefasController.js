@@ -90,6 +90,29 @@ class TarefasController {
       };
     }
 
+    this.divTarefasTerminadas.addEventListener("click", (e) => {
+      e.preventDefault();
+      const id = e.target.parentElement.parentElement.dataset.id;
+
+      if (e.target.className === "resetar-tarefa") {
+        Repository.pegarTasks(usuarioJWT)
+          .then((data) => data.json())
+          .then((data) => {
+            Repository.atualizaTaskFalse(
+              id,
+              usuarioJWT,
+              data.find((item) => item.id === +id)
+            );
+          });
+
+        Repository.pegarTasks(usuarioJWT)
+          .then((data) => data.json())
+          .then((data) => {
+            this.tarefasModel.insereTarefas(data);
+          });
+      }
+    });
+
     DOM.listener(this.closeApp)("click", (evento) => {
       PegaJWT.limpaJWT();
       window.location = "../index.html";

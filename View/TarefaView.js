@@ -42,7 +42,9 @@ class TarefaView {
              )}</p>
            </div>
            <div>
+           <button class="resetar-tarefa"></button>
             </div>
+            
           </li>`;
       });
 

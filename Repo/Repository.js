@@ -49,6 +49,21 @@ const Repo = () => {
     );
   }
 
+  function atualizaTaskFalse(id, Authorization, { description }) {
+    const obj = { description, completed: false };
+
+    const config = { ...configs.put };
+
+    config.headers.Authorization = Authorization;
+    config.body = JSON.stringify(obj);
+
+    function insereId(id) {
+      return this.tasksAtualiza + id;
+    }
+
+    return fetch(insereId.call(RECURSOS, id), config);
+  }
+
   function getUsuario(Authorization) {
     const config = { ...configs.get };
 
@@ -119,7 +134,9 @@ const Repo = () => {
     criarTask,
     atualizaTask,
     deletaTask,
+    atualizaTaskFalse
   };
 };
 
 export default Repo();
+
